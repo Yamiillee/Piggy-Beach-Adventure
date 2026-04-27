@@ -507,9 +507,9 @@
                 <p className="s-lead">Do rascunho no papel até a tela do navegador. Como a equipe trouxe o Nordeste para dentro do jogo.</p>
                 <div className="steps-list">
                     {[
-                        {num:'01',title:'Ideação',desc:'Pegamos os cenários de uma comunidade de pixel art que eles disponibilizam gratuitamente.',tag:'Semana 1–2'},
-                        {num:'02',title:'Direção de Arte',desc:'Paleta inspirada nos azulejos portugueses do Bairro do Recife Antigo e no sol dourado do litoral pernambucano. Pixel art com influência de xilogravura de cordel.',tag:'Semana 3–4'},
-                        {num:'03',title:'Desenvolvimento',desc:'Implementação em React com CSS puro. O ciclo dia/noite sincroniza com a mecânica de marés — à noite, as criaturas do folclore ficam mais agressivas.',tag:'Semana 5–7'},
+                        {num:'01',title:'Ideação',desc:'Tudo começou com uma ideia: criar um jogo que misturasse plataforma com identidade cultural. A equipe se reuniu, debateu referências e definiu o tema: O folclore nordestino à beira-mar. A partir daí, o conceito do Capitão Pipo e a maldição da maré tomaram forma.',tag:'Conceito inicial'},
+                        {num:'02',title:'Curadoria Visual',desc:'Com o tema definido, fomos atrás de imagens, ilustrações e cenários que tivessem concordância com a estética escolhida. Encontramos uma comunidade de pixel art que disponibiliza assets gratuitamente — e a partir desse material, construímos a identidade visual do jogo.',tag:'Assets & Referências'},
+                        {num:'03',title:'Desenvolvimento',desc:'Com os recursos em mãos, iniciamos o desenvolvimento. A equipe foi discutindo as decisões de design ao longo do caminho: como cada fase funcionaria, quais obstáculos fariam sentido e como a mecânica de maré afetaria cada nível. Cada etapa foi construída de forma colaborativa.',tag:'Implementação'},
                     ].map((s,i)=>(
                         <div key={i} className={`step reveal d${i+1}`}>
                             <div className="step-num">{s.num}</div>
@@ -681,13 +681,13 @@
     );
 
     const membros = [
-        {n:'AK', color:'var(--ocre)',      name:'Antonia Kevilyn do Nascimento Silva', role:'Desenvolvedora - Site',          rgm:'38944383'},
-        {n:'KY', color:'var(--azul-med)',  name:'Karina Yumi Ferreira Pinto',          role:'Desenvolvedora - Site',  rgm:'38773368'},
-        {n:'LG', color:'var(--laranja)',   name:'Laysa Gomes',                         role:'Desenvolvedora - Jogo',      rgm:'39229271'},
-        {n:'YS', color:'var(--verde)',     name:'Yamille Santos',                      role:'Desenvolvedora - Jogo',        rgm:'3236997'},
-        {n:'BS', color:'var(--azul)',      name:'Bruno Silva',                         role:'Desenvolvedor - Jogo',        rgm:'32116746'},
-        {n:'ES', color:'var(--laranja-q)', name:'Eliza Santos',                        role:'Desenvolvedora - Jogo',        rgm:'12349388'},
-        {n:'GA', color:'var(--verde)',     name:'Guilherme Andrade Celestino',         role:'Desenvolvedor - Jogo',       rgm:'37115791'},
+        {n:'AK', color:'var(--ocre)',      name:'Antonia Kevilyn do Nascimento Silva', role:'Game Designer',          rgm:'38944383'},
+        {n:'KY', color:'var(--azul-med)',  name:'Karina Yumi Ferreira Pinto',          role:'Dev Front-end / React',  rgm:'38773368'},
+        {n:'LG', color:'var(--laranja)',   name:'Laysa Gomes',                         role:'Pixel Artist / UI',      rgm:'39229271'},
+        {n:'YS', color:'var(--verde)',     name:'Yamille Santos',                      role:'Roteiro e Áudio',        rgm:'3236997'},
+        {n:'BS', color:'var(--azul)',      name:'Bruno Silva',                         role:'Desenvolvimento',        rgm:'32116746'},
+        {n:'ES', color:'var(--laranja-q)', name:'Eliza Santos',                        role:'Arte & Animação',        rgm:'12349388'},
+        {n:'GA', color:'var(--verde)',     name:'Guilherme Andrade Celestino',         role:'Game Design & QA',       rgm:'37115791'},
     ];
 
     const Equipe=()=>(
