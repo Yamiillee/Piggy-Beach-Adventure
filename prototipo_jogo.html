@@ -50,7 +50,7 @@
         @keyframes ceuCiclo{0%{background:linear-gradient(180deg,#04080e 0%,#0a1020 100%)}20%{background:linear-gradient(180deg,#0c1830 0%,#1a3050 100%)}35%{background:linear-gradient(180deg,#d04020 0%,#e06828 40%,#f0a840 70%,#e8c870 100%)}45%{background:linear-gradient(180deg,#3888c8 0%,#78b8e8 40%,#b8d8f0 65%,#e8c878 80%,#e09040 100%)}58%{background:linear-gradient(180deg,#1a60a8 0%,#5090c8 40%,#90c0e0 65%,#c8d8e8 80%,#d8b870 90%,#c89040 100%)}70%{background:linear-gradient(180deg,#c04018 0%,#d86028 40%,#e89840 70%,#d8c060 100%)}82%{background:linear-gradient(180deg,#100820 0%,#1a1430 50%,#0a0810 100%)}100%{background:linear-gradient(180deg,#04080e 0%,#0a1020 100%)}}
         .hero-stars{position:absolute;inset:0;pointer-events:none;animation:fadeStars 52s linear infinite}
         @keyframes fadeStars{0%,20%{opacity:1}38%,70%{opacity:0}80%,100%{opacity:1}}
-        .star{position:absolute;background:white;border-radius:50%;animation:twinkle var(--d,2s) ease-in-out infinite alternate}
+        .star{--d: 2s;position:absolute;background:white;border-radius:50%;animation:twinkle var(--d,2s) ease-in-out infinite alternate}
         @keyframes twinkle{from{opacity:.05}to{opacity:.9}}
         .orbit{position:absolute;left:50%;top:58%;width:1px;height:1px;animation:orbit 52s linear infinite}
         @keyframes orbit{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
@@ -681,13 +681,13 @@
     );
 
     const membros = [
-        {n:'AK', color:'var(--ocre)',      name:'Antonia Kevilyn do Nascimento Silva', role:'Game Designer',          rgm:'38944383'},
-        {n:'KY', color:'var(--azul-med)',  name:'Karina Yumi Ferreira Pinto',          role:'Dev Front-end / React',  rgm:'38773368'},
-        {n:'LG', color:'var(--laranja)',   name:'Laysa Gomes',                         role:'Pixel Artist / UI',      rgm:'39229271'},
-        {n:'YS', color:'var(--verde)',     name:'Yamille Santos',                      role:'Roteiro e Áudio',        rgm:'3236997'},
-        {n:'BS', color:'var(--azul)',      name:'Bruno Silva',                         role:'Desenvolvimento',        rgm:'32116746'},
-        {n:'ES', color:'var(--laranja-q)', name:'Eliza Santos',                        role:'Arte & Animação',        rgm:'12349388'},
-        {n:'GA', color:'var(--verde)',     name:'Guilherme Andrade Celestino',         role:'Game Design & QA',       rgm:'37115791'},
+        {n:'AK', color:'var(--ocre)',      name:'Antonia Kevilyn do Nascimento Silva', role:'Desenvolvedora | Site',          rgm:'38944383'},
+        {n:'KY', color:'var(--azul-med)',  name:'Karina Yumi Ferreira Pinto',          role:'Desenvolvedora | Site',  rgm:'38773368'},
+        {n:'LG', color:'var(--laranja)',   name:'Laysa Gomes',                         role:'Desenvolvedora | Jogo',      rgm:'39229271'},
+        {n:'YS', color:'var(--verde)',     name:'Yamille Santos',                      role:'Desenvolvedora | Site',        rgm:'3236997'},
+        {n:'BS', color:'var(--azul)',      name:'Bruno da Silva',                         role:'Desenvolvedor | Jogo',        rgm:'37946234'},
+        {n:'ES', color:'var(--laranja-q)', name:'Elizabete Oliveira',                        role:'Desenvolvedora | Jogo',        rgm:'37753835'},
+        {n:'GA', color:'var(--verde)',     name:'Guilherme Andrade Celestino',         role:'Desenvolvedor | Jogo',       rgm:'37115791'},
     ];
 
     const Equipe=()=>(
